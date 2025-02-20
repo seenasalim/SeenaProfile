@@ -6,7 +6,7 @@
      - task: CopyFiles@2
        displayName: 'Copy Files to: $(build.artifactstagingdirectory)/Templates'
        inputs:
-         SourceFolder: C:\Users\StudentPC\source\repos\SeenaProfile
+         SourceFolder: '$(Build.SourcesDirectory)/SeenaProfile'
          Contents: '*.json'
          TargetFolder: '$(build.artifactstagingdirectory)/Templates'
      - task: Npm@1
